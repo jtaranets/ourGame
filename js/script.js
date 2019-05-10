@@ -1,5 +1,5 @@
 const draw = function(){
-    const canvas = document.querySelector('.canvas');
+    const canvas = document.getElementById('canvas');
     const ctx = canvas.getContext('2d'); 
     ctx.fillStyle = '#fce38a';
     ctx.fillRect(200, 200, 100, 100);
