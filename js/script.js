@@ -1,6 +1,7 @@
+let canvas = document.getElementById('canvas');
+let ctx = canvas.getContext('2d'); 
+
 const draw = function(){
-    const canvas = document.getElementById('canvas');
-    const ctx = canvas.getContext('2d'); 
     ctx.fillStyle = '#fce38a';
     ctx.fillRect(200, 200, 100, 100);
     ctx.fillStyle = 'rgba(252, 28, 102, 0.4)';
@@ -11,4 +12,8 @@ const draw = function(){
     ctx.clearRect(10, 10, 10, 10);
 }
 
-draw();
+const clear = function(){
+    ctx.clearRect(0, 0, 500, 500);
+}
+
+clear();
